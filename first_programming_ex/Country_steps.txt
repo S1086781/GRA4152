@@ -1,0 +1,36 @@
+1, List of responsibilities of the class Country:
+Construct new instances with self, name, area, population parameters
+Return the name of the object in the class with the largest area, population, density
+
+2, Specify the public interface
+Methods:
+Constructor(self, name, area, population) - create new instance of the class Country
+
+getLargestArea(self) - prints the Country with the largest area
+getLargestPopulation(self) - prints the Country with the largest population
+getLargestDensity(self) - prints the country with the largest population density
+
+Accessor methods have to be implemented for both lists and dictionaries
+
+3, Document the public interface
+See in the Country.py file
+
+4,Determine instance variables
+- name of the country
+- area of the country
+- population of the country
+
+5, Implement the constructor
+
+Constructor is implemented in Country.py
+
+6, Implement methods
+
+Methods are implemented in Country.py
+
+7, Test your class
+
+Test are done in Country_test.py
+
+The test gives correct output.
+
