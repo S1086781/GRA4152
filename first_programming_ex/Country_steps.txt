@@ -6,6 +6,7 @@ Return the name of the object in the class with the largest area, population, de
 Methods:
 Constructor(self, name, area, population) - create new instance of the class Country
 
+Class methods:
 getLargestArea(self) - prints the Country with the largest area
 getLargestPopulation(self) - prints the Country with the largest population
 getLargestDensity(self) - prints the country with the largest population density
@@ -32,5 +33,5 @@ Methods are implemented in Country.py
 
 Test are done in Country_test.py
 
-The test gives correct output.
+The test gives the correct output.
 

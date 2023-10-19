@@ -18,7 +18,7 @@ class Customer:
         else:
             print("You still have to purchase more to receive discount.")
 
-    #books the amount of purchase on the amount purchased instance variable
+    #books the amount of purchase on the amount purchased instance variable and invokes discountReached method
     #@param amount - the amount of the purchase
     def makePurchase(self, amount):
         self._amount_purchased=self._amount_purchased+amount

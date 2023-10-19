@@ -9,7 +9,7 @@ def Country_test():
                                    Method 1-3 - getLargestAreaList, getLargestPopulationList, getLargestDensityList - these methods print the country name and the largest value from the class variable list.
                                    Method 4-6 -  getLargestAreaDict, getLargestPopulationDict, getLargestDensityDict - these methods print the country name and the largest value from the class variable dictionary.
 
-                                   Input parameters: name - name of the country, area - area of the country in million square kms, population - population of the country in millionsname - name of the country, area - area of the country in million square kms, population - population of the country in millions
+                                   Input parameters: name - name of the country, area - area of the country in million square kms, population - population of the country in millions
                                    """)
     
     parser.parse_args()

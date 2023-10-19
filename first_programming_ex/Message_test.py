@@ -28,7 +28,7 @@ def Message_demo():
     email1.getNoMessages()
     print("Expected: 2")
     email1.getLogfile()
-    print("Expected: {'me': {'you': '\nexampleexample'}}")
+    print("Expected: {'me': {'you': '\nexampleexample'}}\n\n\n")
 
     email2=Message()
     email2.append("new line")

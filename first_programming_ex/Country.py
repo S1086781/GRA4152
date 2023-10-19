@@ -1,5 +1,5 @@
 class Country:
-    #class variable lists and dictionaries where instance variable values can be collected to determine the maximum value.
+    #class variable lists and dictionaries where instance variable values can be collected to determine the maximum value and maximum index.
     _country_name_list=[]
     _country_areas_list=[]
     _country_population_list=[]
@@ -14,7 +14,7 @@ class Country:
     #Moreover we add these values to the class variable lists and dictionaries
     #@params name - name of the country, area - area of the country in million square kms, population - population of the country in millions
 
-    def __init__(self,name, area, population):
+    def __init__(self, name, area, population):
         self._name=name
         self._area=area
         self._population=population
@@ -30,7 +30,7 @@ class Country:
         Country._country_density_dict[self._name]=density
 
     #To get the country with maximum area, population and density I defined class methods to get the value of the class variables
-    #The first 3 class methods represent the list based solution the last 3 class methods use the dictionaries.
+    #The first 3 class methods represent the list based solution the last 3 class methods use the class dictionaries.
     #These methods print both the name of the country and the maximum value
     @classmethod
     def getLargestAreaList(cls):
@@ -55,7 +55,7 @@ class Country:
 
 
 
-    #these methods use the class dictionaries to get the maximum
+    #these class methods use the class dictionaries to get the maximum
     @classmethod
     def getLargestAreaDict(cls):
         country_name=max(Country._country_areas_dict, key=Country._country_areas_dict.get)
