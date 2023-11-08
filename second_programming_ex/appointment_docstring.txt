@@ -1,0 +1,34 @@
+This is the docstring for the Appointment class. In this file I document the details of the class and answer the question in exercise 5.
+
+About the Appointment class:
+In the Appointment class the user can create Onetime, Monthly and Daily appointments. These are the subclasses of the Appointment class.
+Moreover, the user can check which appointments are scheduled for a certain day.
+In addition, the user can save and load appointments from a csv file.
+
+Structure of the class:
+The Appointment class has 3 subclasses that inherit from the superclass. These are Onetime, Daily and Monthly.
+
+Methods of the class:
+1 constructor. 3 methods and 3 class methods
+
+-Constructor: the constructor creates the description and date instance variables. Moreover, appends objects to the class variable.
+
+-occursOn: this method decides whether an appointment occurs on a certain day. The output is a boolean variable.
+
+-repr: supports the save method. Makes it easy to write out the parameters of an appointment.
+
+-str: supports the GetAppointments method. Helps to print the details of an appointment.
+
+-GetAppointments: This class method uses the occursOn method to print the details of all appointments that occur on a certain day.
+
+-save: This class method uses the repr method and saves the created appointments to a csv file.
+
+-load: This class method loads instances from a csv file.
+
+Result of the tests:
+
+-appointment_test.py: Tests the GetAppointments method. The test was successful.
+-appointment_laod_save_test.py: Tests the load and save methods. The test was successful.
+
+Exercise 5:
+A polymorphic approach would be to not implement save method in the appointment class but to implement it separately for each subclass. With that solution save method would be also callable for every subclass. My solution is based on inherintance, the save class method is created in the superclass and thus the subclasses inherit this method.
